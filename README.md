@@ -37,6 +37,19 @@ RUN pip freeze
 ```
 
 
+### no build Dockerfile
+```
+docker run --rm -p 8889:8888 quay.io/jupyter/base-notebook start-notebook.py --NotebookApp.token='my-token'
+
+docker run --rm -p 8889:8888 -v "$(pwd)/work:/home/jovyan/work" quay.io/jupyter/base-notebook start-notebook.py --NotebookApp.token='my-token'
+
+
+
+
+
+### Open `http://localhost:8889/lab?token=my-token` in your browser
+
+```
 
 
 

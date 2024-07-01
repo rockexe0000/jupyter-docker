@@ -26,3 +26,18 @@ The idea of this project is to have a simple way to run Jupyter in a Docker cont
 4. Enjoy!
 
 Don't forget to give a star if you like this project! 😸
+
+
+====================================================================
+
+
+### show requirements versions
+```
+RUN pip freeze
+```
+
+
+
+
+
+
